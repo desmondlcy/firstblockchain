@@ -12,9 +12,10 @@ class Blockchain {
   }
 
   isValidChain(chain){
+
     if(JSON.stringify(chain[0]) !== JSON.stringify(Block.genesis())) return false;
 
-    for(let i=i;i<chain.length;i++)
+    for(let i=1;i<chain.length;i++)
     {
         const block = chain[i];
         const lastBlock = chain[i-1];
@@ -24,7 +25,24 @@ class Blockchain {
             return false;
         }
     }
+
+    return true;
   }
+
+  replaceChain(newChain) {
+    if(newChain.length <= this.chain.length) {
+      console.log('Received chain is not longer than current chain.');
+      return;
+    }else if (!this.isValidChain(newChain)){
+      console.log('new chain is not a valid chain');
+      return;
+    }
+
+    console.log('new changed replaced');
+    this.chain = newChain;
+
+  }
+
 }
 
 module.exports = Blockchain;

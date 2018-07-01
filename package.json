@@ -12,10 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
-    "nodeman": "^1.1.2",
-    "nodemon": "^1.17.5"
+    "express": "^4.16.3",
+    "nodeman": "^1.1.2"
   },
   "devDependencies": {
-    "jest": "^23.2.0"
+    "jest": "^23.2.0",
+    "nodemon": "^1.17.5"
   }
 }
