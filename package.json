@@ -13,10 +13,15 @@
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "express": "^4.16.3",
+<<<<<<< HEAD
     "nodeman": "^1.1.2",
     "nodemon": "^1.17.5"
+=======
+    "nodeman": "^1.1.2"
+>>>>>>> c0f3f819a20c52acf1babe939f3e437369f2cd15
   },
   "devDependencies": {
-    "jest": "^23.2.0"
+    "jest": "^23.2.0",
+    "nodemon": "^1.17.5"
   }
 }
