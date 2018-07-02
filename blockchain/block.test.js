@@ -27,7 +27,6 @@ expect(block.lastHash).toEqual(lastBlock.hash);
 	});
 
 	it('raises the difficulty for quickly mined blocks', () => {
-		expect(Block.adjustDifficulty(block,block.timestap+1))
-		.toEqual(block.difficulty+1);
+		expect(Block.adjustDifficulty(block, block.timestamp+1)).toEqual(block.difficulty+1);
 	});
 });
